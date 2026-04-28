@@ -16,7 +16,10 @@
 - **검증**: 변경 사항을 반영하기 전에 링크가 깨지지 않았는지, 시각적으로 의도한 대로 출력되는지 확인합니다.
 
 ## 4. 관리 대상 프로젝트 (Profile Section)
-*(이 섹션에는 프로필에 강조할 프로젝트들을 하나씩 추가할 예정입니다)*
+- **[TIL](https://github.com/DevDooly/TIL)**: 매일 학습한 기술적 내용을 기록하는 지식 저장소
+- **[spring-skeleton](https://github.com/DevDooly/spring-skeleton)**: Spring Boot 기반의 효율적인 프로젝트 구조를 위한 골격(Boilerplate)
+- **[ai-playground](https://github.com/DevDooly/ai-playground)**: LLM(Gemini 등) 및 AI 기술을 활용한 다양한 실험적 프로젝트
+- **[nasdaq-is-god](https://github.com/DevDooly/nasdaq-is-god)**: 나스닥 시장 분석 및 매매 자동화를 위한 통합 솔루션 (Bot, API, Frontend)
 
 ---
 *규칙은 필요에 따라 수시로 업데이트될 예정입니다.*
