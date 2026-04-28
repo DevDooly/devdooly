@@ -44,7 +44,26 @@ GitHub Stats는 단순히 코드를 올리는 것(Commit) 외에, 협업 지표(
 
 ---
 
-## 🛠 3. 즉시 적용해볼 수 있는 Action Item
+## 🎨 4. GitHub 프로필 고도화 전략 (Advanced)
+
+프로필을 더욱 "살아있게" 만들기 위한 고급 꾸미기 팁입니다.
+
+### 4.1 동적 데이터 연동 (Dynamic Stats)
+- **WakaTime**: 주간 코딩 시간과 사용 언어 통계를 실시간으로 보여줍니다.
+- **Blog RSS Feed**: `GitHub Action`을 활용하여 개인 블로그의 최신 글 목록을 자동으로 업데이트합니다.
+
+### 4.2 시각적 요소 강화
+- **Profile Banner**: [Capsule Render](https://github.com/kyechan9/capsule-render)나 직접 만든 이미지를 상단에 배치하여 아이덴티티를 드러냅니다.
+- **Visitor Counter**: [HITS](https://hits.seeyoufarm.com/) 등을 사용하여 방문자 수를 시각화합니다.
+- **3D Grass**: [github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) 액션을 사용해 입체적인 기여도 그래프를 생성합니다.
+
+### 4.3 오픈소스 활동 배지
+- **GitHub Trophies**: [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)를 통해 획득한 성과를 트로피 형태로 전시합니다.
+
+---
+
+## 🛠 5. 즉시 적용해볼 수 있는 Action Item (Update)
 1. [ ] GitHub 설정에서 **Private Contributions** 공개 설정하기.
-2. [ ] `nasdaq-is-god` 등 주요 프로젝트에 **Topics(태그)** 등록하기 (ex: python, trading-bot, fastapi).
-3. [ ] 프로필 README의 Stats 카드에 `&count_private=true` 옵션 추가 검토하기.
+2. [ ] `nasdaq-is-god` 등 주요 프로젝트에 **Topics(태그)** 등록하기.
+3. [ ] 상단에 나만의 **커스텀 배너** 추가하기.
+4. [ ] 하단 혹은 상단에 **방문자 카운트 배지** 추가하기.
