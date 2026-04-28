@@ -11,20 +11,20 @@
 <p>
   <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
 </p>
 
 #### 🚀 Proficient / Daily Use
 <p>
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
   <img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
 </p>
 
 #### 📚 Familiar / Learning
 <p>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white">
 </p>
 
 ---
@@ -37,15 +37,6 @@
 | **[nasdaq-is-god](https://github.com/DevDooly/nasdaq-is-god)** | 나스닥 분석 및 매매 자동화 봇 시스템 | `Python`, `Telegram API`, `FastAPI` |
 | **[spring-skeleton](https://github.com/DevDooly/spring-skeleton)** | MSA 환경에 최적화된 Spring Boot 프로젝트 골격 | `Java`, `Spring Cloud`, `Kafka` |
 | **[ai-playground](https://github.com/DevDooly/ai-playground)** | LLM과 자동화 도구를 활용한 실험적 개발 공간 | `LLM`, `Prompt Engineering`, `CLI` |
-
----
-
-### 📊 Github Stats
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=DevDooly&show_icons=true&theme=radical&count_private=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DevDooly&layout=compact&theme=radical" />
-</p>
 
 ---
 
