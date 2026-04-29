@@ -45,6 +45,7 @@
 ---
 
 ### 📫 Contact & More
+- **Email**: sunhongyi@gmail.com
 - **GitHub**: [github.com/DevDooly](https://github.com/DevDooly)
 - **Interest**: Architecture, Automation, AI Integration, Stock Market Analysis
 
