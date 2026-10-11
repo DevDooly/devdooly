@@ -3,6 +3,8 @@
 </p>
 
 <p align="center">
+  <a href="https://devdooly.github.io/devdooly-platform-lab/"><strong>Platform Lab ↗</strong></a>
+  &nbsp; · &nbsp;
   <a href="https://devdooly.github.io/TIL/"><strong>기술 위키</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/DevDooly/llm-dev-cli"><strong>AI 개발 도구</strong></a>
@@ -10,11 +12,39 @@
   <a href="mailto:sunhongyi@gmail.com"><strong>이메일</strong></a>
 </p>
 
-## 백엔드 개발에 AI를 더합니다
+## 만들고 개선한 과정을 기록합니다
 
 Java·Spring Boot 기반 서비스와 데이터 파이프라인을 개발하는 **DevDooly**입니다. Kubernetes·MinIO 환경을 운영하며, Helm 차트 작성과 배포, Kafka 오류 분석과 개선을 함께 담당합니다.
 
-최근에는 **LLM을 활용한 레거시 코드 개선**과 **개발 도구 자동화**에 집중하고 있습니다. 업무에서 해결한 문제는 기술 위키에 기록하고, 개인 프로젝트에서는 CLI와 Android 앱으로 아이디어를 구현합니다.
+최근에는 **LLM을 활용한 레거시 코드 개선**과 **개발 도구 자동화**에 집중하고 있습니다. 실무에서 쌓은 경험은 개인 Platform Lab으로 재현하고, 기술적인 판단과 문제 해결 과정은 TIL에 남깁니다. CLI와 Android 앱도 만들고 있습니다.
+
+## 직접 확인할 수 있는 Platform Lab
+
+<p>
+  <a href="https://devdooly.github.io/devdooly-platform-lab/">
+    <img src="./assets/platform-lab-card.svg" width="100%" alt="Platform Lab 열기 — Java 데이터 처리, CI 검증과 Kubernetes 배포를 기록하는 개인 포트폴리오" />
+  </a>
+</p>
+
+**[포트폴리오와 Lab 열기 →](https://devdooly.github.io/devdooly-platform-lab/)** · [소스와 설계](https://github.com/DevDooly/devdooly-platform-lab) · [다음 개발 계획](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/NEXT_STEPS.md)
+
+회사 코드·데이터를 사용하지 않는 개인 프로젝트입니다. 합성 센서 데이터의 처리 결과와 실패 사유를 조회하고, 구현·테스트·배포의 근거를 함께 공개합니다.
+
+| 확인할 수 있는 것 | 구현과 검증 |
+| :--- | :--- |
+| **데이터 처리 결과** | Java·Spring Boot·MariaDB, 입력 12건의 성공·실패·중복과 시계열 조회 |
+| **빌드와 배포 기록** | Jenkins 테스트·패키징, Actions 이미지 게시, Argo CD·Helm의 K3s 배포 |
+| **실제 실행 근거** | [미니 PC 검증 기록](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/mini-pc/README.md) · [Jenkins 빌드 기록](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/jenkins-ci/README.md) |
+
+공개 화면은 **미니 PC에서 마지막으로 수집한 실제 기록**과 수집 시각을 표시합니다. 실시간 상태 수집과 Jenkins의 이미지 게시 연계는 다음 구현입니다.
+
+### 다음으로 구현할 것
+
+1. **운영과 복구** — 외부 백업, 격리된 DB 복원, 장애 대응 기록
+2. **CI/CD와 관측** — 실패 차단·이전 버전 복구, 빌드와 배포 상태의 자동 수집
+3. **데이터와 AI 사례** — Kafka·객체 저장소, 공개 Java 개선 사례, Iceberg·Trino 순서로 확장
+
+[단계별 결과물과 완료 조건 보기 →](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/NEXT_STEPS.md)
 
 ## 최근 AI 활용
 
@@ -88,7 +118,7 @@ Java·Spring Boot 기반 서비스와 데이터 파이프라인을 개발하는 
 | 경험 범위 | 기술 |
 | :--- | :--- |
 | **백엔드 실무** | Java 21 · Spring Boot · Jdbi · Kafka · SQL |
-| **배포와 운영** | Kubernetes · Helm · MinIO · Docker · Linux · Ansible |
+| **배포와 운영** | Kubernetes · Helm · Jenkins · Argo CD · MinIO · Docker · Linux · Ansible |
 | **데이터 플랫폼** | Hadoop · Hive · Tez · Trino · Iceberg · Spark · Airflow |
 | **개인 프로젝트** | Python · FastAPI · Kotlin · Android · TypeScript |
 
@@ -101,6 +131,8 @@ Java·Spring Boot 기반 서비스와 데이터 파이프라인을 개발하는 
 - [MinIO 버전 보존과 객체 삭제](https://devdooly.github.io/TIL/Troubleshooting/MinIO_Versioning_Deletion_Issue/) — 삭제 마커와 버전별 삭제 방식
 
 <p align="center">
+  <a href="https://devdooly.github.io/devdooly-platform-lab/">Platform Lab 열기 ↗</a>
+  &nbsp; · &nbsp;
   <a href="https://devdooly.github.io/TIL/">기록 더 보기</a>
   &nbsp; · &nbsp;
   <a href="mailto:sunhongyi@gmail.com">sunhongyi@gmail.com</a>
