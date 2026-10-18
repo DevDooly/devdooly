@@ -32,17 +32,19 @@ Java·Spring Boot 기반 서비스와 데이터 파이프라인을 개발하는 
 
 | 확인할 수 있는 것 | 구현과 검증 |
 | :--- | :--- |
-| **데이터 처리 결과** | Java·Spring Boot·MariaDB, 입력 12건의 성공·실패·중복과 시계열 조회 |
-| **빌드와 배포 기록** | Jenkins 테스트·패키징, Actions 이미지 게시, Argo CD·Helm의 K3s 배포 |
-| **실제 실행 근거** | [미니 PC 검증 기록](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/mini-pc/README.md) · [Jenkins 빌드 기록](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/jenkins-ci/README.md) |
+| **데이터 처리와 export** | Java·Spring Boot·MariaDB, Kafka 작업 처리와 결과·실패 파일 export |
+| **빌드와 배포 기록** | Jenkins·Actions의 같은 소스 검증·이미지 게시, Argo CD·Helm 배포와 실패 차단·이전 이미지 복구 |
+| **복원과 관측 근거** | [30분 주기·자연 실행 2회](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/kafka-observation/README.md) · [CI/CD 검증](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/cicd-gate/README.md) · [Kafka·Garage 격리 복원](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/runtime-pvc-restore/README.md) |
 
-공개 화면은 **미니 PC에서 마지막으로 수집한 실제 기록**과 수집 시각을 표시합니다. 실시간 상태 수집과 Jenkins의 이미지 게시 연계는 다음 구현입니다.
+공개 화면은 **30분 주기로 수집·게시하는 미니 PC의 마지막 관측 기록**을 표시합니다. 원래 타이머의 자연 실행 2회와 각 회차의 공개 기록을 대조했고, MariaDB 논리 복원과 Kafka·Garage의 격리 PVC 복원도 확인했습니다.
+
+[내부 게이트웨이](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/evidence/public-read-gateway-internal/README.md)에서는 조회 6개와 제한 요청 3개, 접근 대조·임시 자원 정리·기존 상태 보존을 확인했습니다. 연결 거절이 NetworkPolicy만의 결과인지는 확인하지 않았으며, 외부 HTTPS와 공개 화면의 실시간 API 연결은 다음 단계입니다.
 
 ### 다음으로 구현할 것
 
-1. **운영과 복구** — 외부 백업, 격리된 DB 복원, 장애 대응 기록
-2. **CI/CD와 관측** — 실패 차단·이전 버전 복구, 빌드와 배포 상태의 자동 수집
-3. **데이터와 AI 사례** — Kafka·객체 저장소, 공개 Java 개선 사례, Iceberg·Trino 순서로 확장
+1. **공개 조회 연결** — 외부 HTTPS와 조회 게이트웨이를 포트폴리오 화면에 연결
+2. **운영과 복구 확장** — 자격증명 회전·장기간 운영, Jenkins·K3s 전체 복원 검증
+3. **개선 사례 정리** — Java·데이터·AI 개선의 전후 측정과 기술적인 판단 공개
 
 [단계별 결과물과 완료 조건 보기 →](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/NEXT_STEPS.md)
 
