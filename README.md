@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="#개발-역량"><strong>개발 역량</strong></a>
+  <a href="#user-content-개발-역량"><strong>개발 역량</strong></a>
   &nbsp; · &nbsp;
-  <a href="#ai와-함께-진행한-프로젝트"><strong>AI 프로젝트</strong></a>
+  <a href="#user-content-ai와-함께-진행한-프로젝트"><strong>AI 프로젝트</strong></a>
   &nbsp; · &nbsp;
   <a href="https://devdooly.github.io/TIL/"><strong>기술 위키</strong></a>
   &nbsp; · &nbsp;
@@ -119,7 +119,7 @@ AI 개발을 위한 도구와 함께 살펴볼 수 있는 개인 앱·실험도 
 [Spring Boot 멀티 모듈 템플릿](https://github.com/DevDooly/spring-skeleton) · [nasdaq-is-god](https://github.com/DevDooly/nasdaq-is-god) · [TIL 기술 위키](https://devdooly.github.io/TIL/) · [전체 공개 저장소](https://github.com/DevDooly?tab=repositories)
 
 <p align="center">
-  <a href="#개발-역량">개발 역량으로 ↑</a>
+  <a href="#user-content-개발-역량">개발 역량으로 ↑</a>
   &nbsp; · &nbsp;
   <a href="https://devdooly.github.io/TIL/">기술 기록 읽기</a>
   &nbsp; · &nbsp;
