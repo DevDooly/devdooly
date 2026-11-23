@@ -1,43 +1,47 @@
 # GitHub 프로필 관리 가이드
 
-프로필 주소는 [github.com/DevDooly](https://github.com/DevDooly)이며, 이 저장소의 기본 브랜치에 있는 `README.md`가 프로필에 표시됩니다.
+[github.com/DevDooly](https://github.com/DevDooly)에서는 이 저장소 기본 브랜치의 `README.md`를 표시합니다. 이번 개편 대상은 GitHub 프로필입니다.
 
 ## 현재 구성
 
-1. `assets/profile-banner.svg`: 저장소에서 직접 제공하는 네이비·민트 배너
-2. 상단 Platform Lab 바로가기와 백엔드·데이터 플랫폼 소개
-3. `assets/platform-lab-card.svg`: 공개 Lab·소스·계획을 연결하는 대표 프로젝트 카드
-4. 사용자에게 확인한 LLM 활용 사례
-5. 개발 도구와 공개 프로젝트 네 가지
-6. 최근 Android 앱 Slivue와 ThumbBridge
-7. 실무·개인 프로젝트·학습을 구분한 기술 목록
-8. TIL의 대표 기술 기록과 연락처
+1. 기존 `assets/profile-banner.svg`와 개발 역량·AI 프로젝트·기술 위키·연락처로 가는 링크
+2. **개발 역량** — 공개 프로필의 실무·개인 기술 범위, 업무의 AI 활용 경험, 개인 Lab의 문제 해결 사례
+3. **AI와 함께 진행한 프로젝트** — Slivue·모임포켓·Platform Lab을 먼저 소개하고 추가 도구·실험·기획을 연결
 
-## 내용을 추가할 때
+대표 프로젝트는 목적, 실제 기능, 기술과 현재 상태를 읽고 소스·문서로 이동할 수 있도록 구성합니다. 기존 Lab의 세부 관측·복원 기록은 접어서 확인할 수 있습니다. 후속 운영 검증 목록은 각 프로젝트의 진행 문서에서 관리합니다.
 
-- 실제로 수행한 일과 공개 저장소에서 확인할 수 있는 기능을 소개합니다.
-- 업무 경험, 개인 프로젝트, 학습 중인 내용을 구분합니다. CKA는 취득 전까지 준비 중으로 표기합니다.
-- 시간복잡도나 처리 속도의 전후 수치는 측정 근거가 확인됐을 때 추가합니다.
-- 프로젝트를 추가할 때는 목적, 대표 기능, 저장소 링크를 짧게 적습니다.
-- 버전 번호를 본문에 고정하기보다 릴리스 목록이나 최신 릴리스로 연결합니다. 개발용 APK는 개발 버전임을 드러냅니다.
-- 회사의 소스 코드, 내부 URL, 고객 정보, 개인 전화번호는 프로필에 넣지 않습니다.
+## 2026-11-23 확인한 소개 근거
 
-## 배너와 링크
+| 프로젝트 | 기능·상태 근거 | AI 활용 설명의 근거 |
+| --- | --- | --- |
+| Slivue | [README](https://github.com/DevDooly/Slivue/blob/main/README.md), [개발 문서](https://github.com/DevDooly/Slivue/blob/main/docs/DEVELOPMENT_REFERENCE.md) — Android 알림·답장, GitHub APK, Play 출시 준비 | [AI 작업 지침과 스킬](https://github.com/DevDooly/Slivue/blob/main/AGENTS.md) |
+| 모임포켓 | [README](https://github.com/DevDooly/moim-pocket/blob/main/README.md) — 회비·장부·일정·투표·사진, Docker Compose 실행 | 사용자가 AI와 진행한 계모임 페이지로 지정. 도구별 작업량·기여 비율은 공개 기록에 없음 |
+| Platform Lab | [공개 문서](https://devdooly.github.io/devdooly-platform-lab/handbook/), [소스](https://github.com/DevDooly/devdooly-platform-lab)와 [VM CI/CD](https://github.com/DevDooly/devdooly-platform-lab-vm-cicd) | 이 대화의 구현·검증·문서화 기록, [Java 예제의 AI 활용 범위](https://github.com/DevDooly/devdooly-platform-lab/blob/main/examples/java-window-analysis/PROVENANCE.md) |
+| Thumbbridge | [README](https://github.com/DevDooly/Thumbbridge/blob/main/README.md), [구현·검증](https://github.com/DevDooly/Thumbbridge/blob/main/docs/DEVELOPMENT.md) — Kotlin·Android View, 개발용 debug APK | 이전 공개 프로필의 Android 개발 프로젝트를 계승. 문서에 없는 모델명·기여 비율은 추가하지 않음 |
+| llm-dev-cli | [README](https://github.com/DevDooly/llm-dev-cli/blob/main/README.md) — 초기 문서·룰셋·정적 점검·로컬 대시보드 | AI 프로젝트를 위한 개발 도구라는 공개 설명 |
+| AI Playground | [README](https://github.com/DevDooly/ai-playground/blob/main/README.md) — Gemini CLI, LLM 개발 환경과 AI 게시판 | 도구와 실험별 공개 안내 |
+| Nasdaq is God | [README](https://github.com/DevDooly/nasdaq-is-god/blob/main/README.md), [구현 상태](https://github.com/DevDooly/nasdaq-is-god/blob/main/PROJECT_STATUS.md) — 백테스트·감성 분석 실험 | [AI 작업 지침](https://github.com/DevDooly/nasdaq-is-god/blob/main/PROJECT_RULE.md). 실제 매매 성과를 소개하는 근거는 없음 |
+| PyBridge | [README](https://github.com/DevDooly/PyBridge/blob/main/README.md) — FastAPI CSV 검증·실행 스크립트 | [Gemini 개발 지침](https://github.com/DevDooly/PyBridge/blob/main/GEMINI.md) |
+| Java UTC 구간 계산 | [예제](https://github.com/DevDooly/devdooly-platform-lab/tree/main/examples/java-window-analysis)와 JMH·독립 oracle | [AI 활용 범위](https://github.com/DevDooly/devdooly-platform-lab/blob/main/examples/java-window-analysis/PROVENANCE.md). [소유자 검토](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/reviews/ai-window-owner-review.md)는 PENDING |
+| RoadWitness | [README](https://github.com/DevDooly/road-witness/blob/main/README.md) — 기획·구조·합성 예시 | 기기 내 AI 기능의 설계 단계. 실행 앱·학습 모델의 완료로 표시하지 않음 |
 
-배너는 외부 이미지 생성 서비스 없이 GitHub 저장소의 SVG를 사용합니다. 변경할 때 라이트·다크 배경에서 가독성과 글자 잘림을 확인합니다. 이미지가 표시되지 않아도 핵심 내용은 본문에서 읽을 수 있게 유지합니다.
+Color Rest와 노비의 삶은 공개 개인 앱 후보로 확인했으나 README에서 AI 개발 범위를 확인하지 못해 이번 AI 모음에 넣지 않았습니다. geek-news-checker는 README에 상세 소개 근거가 부족했습니다. 이후 사용자 설명이나 공개 기록이 보완되면 추가할 수 있습니다.
 
-README를 수정한 뒤에는 GitHub Markdown 렌더링, 주요 링크, 작은 화면에서의 표 줄바꿈을 확인합니다. 프로필 소개문과 웹사이트 주소는 저장소의 README와 별도로 GitHub 사용자 프로필에서 관리됩니다. 웹사이트는 [Platform Lab](https://devdooly.github.io/devdooly-platform-lab/)으로 연결하고 기존 TIL은 상단 링크로 제공합니다. 개발 계획의 원본은 [Lab 다음 개발 계획](https://github.com/DevDooly/devdooly-platform-lab/blob/main/docs/NEXT_STEPS.md)입니다.
+## 새 VM 설치 작업의 재개 상태
 
-## 대표 저장소 후보
+2026-11-17 마지막 관측에서 별도 PR309 VM의 Ubuntu·SSH·cloud-init이 응답했습니다. 설치기는 `--check`의 systemd 빈 패턴 조회가 종료 코드 1을 반환해 멈췄습니다. 수정 커밋 `b9edd51`과 로컬 스킬 등록 `46d0969`가 준비돼 있습니다.
 
-대표 저장소 고정은 GitHub 프로필의 고정 저장소 편집 화면에서 관리합니다. 현재 구성과 연결되는 후보는 다음과 같습니다.
+2026-11-23 확인한 [PR #309](https://github.com/DevDooly/devdooly-platform-lab/pull/309)는 OPEN/DRAFT이며 원격 head는 `7b6cb0d`입니다. 관리자 재시도 등록, 전체 설치, Grafana 서비스 상태·실제 로그 검증과 그 뒤 스킬 게시가 남아 있습니다. 프로필에서는 이 새 설치를 진행 중으로 표시합니다. 이 문서 정리 과정에서 VM 상태를 재조회하거나 설치를 실행하지 않았습니다.
 
-- `devdooly-platform-lab`: 현재 대표 포트폴리오와 배포·운영 검증
-- `llm-dev-cli`: AI 개발 도구
-- `TIL`: 기술 기록
-- `spring-skeleton`: 백엔드 구조
-- `ai-playground`: AI 개발 실험
-- `Slivue`: Android 알림 앱
-- `Thumbbridge`: Android 터치 보조 앱
+개인 재개 명령과 상세 이력은 로컬 `RESUME-20261123.md`와 `platform-lab-setup-guide-20261116/EXECUTION-LOG.md`에 보관합니다. 공개 문서에는 접속 주소·키·비밀·원본 서비스 로그를 넣지 않습니다.
 
-실제 고정 여부와 순서는 프로필 화면에서 확인합니다.
+## 수정과 확인
+
+- 공개 프로필에 있던 업무 경험과 개인 Lab의 합성 시험을 나눠 설명합니다. 성능 수치는 조건과 원본 근거를 연결할 수 있을 때 추가합니다.
+- 프로젝트의 구현·APK·실행 가이드·공개 서비스·설계 단계를 각각 실제 상태로 적습니다.
+- 소스에 AI 지침이 있다는 사실을 도구별 개발 기여 비율이나 사람의 채택 완료로 바꾸지 않습니다.
+- 직무 소개와 기술 범위의 원문은 이전 README의 Git 이력에서 확인할 수 있습니다. 학습·자격증 상태는 새로 확인한 내용으로 갱신합니다.
+- README 앵커는 GitHub Markdown 렌더링 결과와 대조합니다. 링크, 접이식 기록, 기존 배너와 모바일 줄바꿈을 확인합니다.
+- GitHub 프로필 소개문과 고정 저장소는 README와 별도 설정입니다. 이번 변경은 README와 이 관리 문서에 적용합니다.
+
+대표 저장소 고정 후보는 `devdooly-platform-lab`, `Slivue`, `moim-pocket`, `llm-dev-cli`, `Thumbbridge`, `TIL`입니다. 실제 고정 여부와 순서는 프로필의 고정 저장소 편집 화면에서 확인합니다.
