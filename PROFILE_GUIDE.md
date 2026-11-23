@@ -15,7 +15,7 @@
 | 프로젝트 | 기능·상태 근거 | AI 활용 설명의 근거 |
 | --- | --- | --- |
 | Slivue | [README](https://github.com/DevDooly/Slivue/blob/main/README.md), [개발 문서](https://github.com/DevDooly/Slivue/blob/main/docs/DEVELOPMENT_REFERENCE.md) — Android 알림·답장, GitHub APK, Play 출시 준비 | [AI 작업 지침과 스킬](https://github.com/DevDooly/Slivue/blob/main/AGENTS.md) |
-| 모임포켓 | [README](https://github.com/DevDooly/moim-pocket/blob/main/README.md) — 회비·장부·일정·투표·사진, Docker Compose 실행 | 사용자가 AI와 진행한 계모임 페이지로 지정. 도구별 작업량·기여 비율은 공개 기록에 없음 |
+| 모임포켓 | [README](https://github.com/DevDooly/moim-pocket/blob/main/README.md) — 회비·장부·일정·투표·사진, Docker Compose 실행과 [Cloudflare 공개 데모](https://moim-pocket.wlgnsgks.chatgpt.site) | 사용자가 AI와 진행한 계모임 페이지로 지정. 도구별 작업량·기여 비율은 공개 기록에 없음 |
 | Platform Lab | [공개 문서](https://devdooly.github.io/devdooly-platform-lab/handbook/), [소스](https://github.com/DevDooly/devdooly-platform-lab)와 [VM CI/CD](https://github.com/DevDooly/devdooly-platform-lab-vm-cicd) | 이 대화의 구현·검증·문서화 기록, [Java 예제의 AI 활용 범위](https://github.com/DevDooly/devdooly-platform-lab/blob/main/examples/java-window-analysis/PROVENANCE.md) |
 | Thumbbridge | [README](https://github.com/DevDooly/Thumbbridge/blob/main/README.md), [구현·검증](https://github.com/DevDooly/Thumbbridge/blob/main/docs/DEVELOPMENT.md) — Kotlin·Android View, 개발용 debug APK | 이전 공개 프로필의 Android 개발 프로젝트를 계승. 문서에 없는 모델명·기여 비율은 추가하지 않음 |
 | llm-dev-cli | [README](https://github.com/DevDooly/llm-dev-cli/blob/main/README.md) — 초기 문서·룰셋·정적 점검·로컬 대시보드 | AI 프로젝트를 위한 개발 도구라는 공개 설명 |
@@ -45,3 +45,12 @@ Color Rest와 노비의 삶은 공개 개인 앱 후보로 확인했으나 READM
 - GitHub 프로필 소개문과 고정 저장소는 README와 별도 설정입니다. 이번 변경은 README와 이 관리 문서에 적용합니다.
 
 대표 저장소 고정 후보는 `devdooly-platform-lab`, `Slivue`, `moim-pocket`, `llm-dev-cli`, `Thumbbridge`, `TIL`입니다. 실제 고정 여부와 순서는 프로필의 고정 저장소 편집 화면에서 확인합니다.
+
+
+## 모임포켓 공개 데모 · 2026-11-23
+
+[공개 데모](https://moim-pocket.wlgnsgks.chatgpt.site)는 사용자가 선택한 가상 모임 체험용입니다. 별도 Cloudflare 가입 없이 연결된 Sites 계정으로 게시했습니다. Sites가 발급한 실제 주소를 README에 사용합니다.
+
+원본의 환경 파일·SQLite DB·시드·업로드를 옮기지 않고 가상 모임원과 장부를 생성했습니다. Cloudflare Worker용으로 D1·R2와 JSON 백업을 연결했으며, IMAP 메일함 직접 연결은 제공하지 않습니다. 최초 배포의 DB 초기화 오류를 요청 범위 초기화로 수정한 버전 2를 게시했습니다.
+
+공개 URL에서 익명 접속, 입장·총무 인증, 주요 API 6개, D1 저장 후 재조회, R2 이미지의 원본 bytes·앨범 등록·ZIP, JSON 백업 내려받기를 확인했습니다. 확인용 거래와 파일은 해당 ID로 정리했습니다. 전체 JSON 복원은 별도 로컬 가상 DB에서 검증했습니다.
