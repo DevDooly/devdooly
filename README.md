@@ -81,11 +81,11 @@ AI 에이전트용 작업 지침과 오버레이·성능·테스트·릴리스 �
 
 **계모임의 회비·장부·일정·사진을 관리하는 모바일 웹**
 
-회비 납부 현황과 입출금 장부, 일정·투표, 사진 앨범과 게시판을 한곳에서 관리합니다. 총무 기능과 SQLite 백업·복원도 포함합니다. Next.js·TypeScript·Prisma·SQLite를 사용하며 Docker Compose 실행 방법을 공개했습니다.
+회비 납부 현황과 입출금 장부, 일정·투표, 사진 앨범과 게시판을 한곳에서 관리합니다. 원본은 Next.js·TypeScript·Prisma·SQLite와 Docker Compose로 구성했고, 공개 데모는 Cloudflare Workers·D1·R2에서 실행합니다.
 
-AI와 진행한 계모임 페이지를 서비스 프로젝트로 정리했습니다. 공개 저장소에서 기능과 실행 방법을 확인할 수 있습니다.
+가상 모임 데이터로 입장·총무 전환과 주요 기능을 체험할 수 있습니다. 공개 데모의 변경 내용은 방문자끼리 공유됩니다.
 
-[프로젝트·실행 안내](https://github.com/DevDooly/moim-pocket) · [구현 소스](https://github.com/DevDooly/moim-pocket/tree/main/src) · [데이터 구조](https://github.com/DevDooly/moim-pocket/blob/main/prisma/schema.prisma)
+[공개 데모 체험](https://moim-pocket.wlgnsgks.chatgpt.site) · [프로젝트·실행 안내](https://github.com/DevDooly/moim-pocket) · [구현 소스](https://github.com/DevDooly/moim-pocket/tree/main/src) · [데이터 구조](https://github.com/DevDooly/moim-pocket/blob/main/prisma/schema.prisma)
 
 ### Platform Lab · 서비스부터 플랫폼 구축까지
 
