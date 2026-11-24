@@ -7,6 +7,8 @@
   &nbsp; · &nbsp;
   <a href="#user-content-ai와-함께-진행한-프로젝트"><strong>AI 프로젝트</strong></a>
   &nbsp; · &nbsp;
+  <a href="https://devdooly.github.io/TIL/AI/MCP_Selection_Guide/"><strong>MCP 가이드</strong></a>
+  &nbsp; · &nbsp;
   <a href="https://devdooly.github.io/TIL/"><strong>기술 위키</strong></a>
   &nbsp; · &nbsp;
   <a href="mailto:sunhongyi@gmail.com"><strong>이메일</strong></a>

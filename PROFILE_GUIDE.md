@@ -4,7 +4,7 @@
 
 ## 현재 구성
 
-1. 기존 `assets/profile-banner.svg`와 개발 역량·AI 프로젝트·기술 위키·연락처로 가는 링크
+1. 기존 `assets/profile-banner.svg`와 개발 역량·AI 프로젝트·MCP 가이드·기술 위키·연락처로 가는 링크
 2. **개발 역량** — 공개 프로필의 실무·개인 기술 범위, 업무의 AI 활용 경험, 개인 Lab의 문제 해결 사례
 3. **AI와 함께 진행한 프로젝트** — Slivue·모임포켓·Platform Lab을 먼저 소개하고 추가 도구·실험·기획을 연결
 
@@ -54,3 +54,8 @@ Color Rest와 노비의 삶은 공개 개인 앱 후보로 확인했으나 READM
 원본의 환경 파일·SQLite DB·시드·업로드를 옮기지 않고 가상 모임원과 장부를 생성했습니다. Cloudflare Worker용으로 D1·R2와 JSON 백업을 연결했으며, IMAP 메일함 직접 연결은 제공하지 않습니다. 최초 배포의 DB 초기화 오류를 요청 범위 초기화로 수정한 버전 2를 게시했습니다.
 
 공개 URL에서 익명 접속, 입장·총무 인증, 주요 API 6개, D1 저장 후 재조회, R2 이미지의 원본 bytes·앨범 등록·ZIP, JSON 백업 내려받기를 확인했습니다. 확인용 거래와 파일은 해당 ID로 정리했습니다. 전체 JSON 복원은 별도 로컬 가상 DB에서 검증했습니다.
+## MCP 안내 페이지
+
+상단의 [MCP 가이드](https://devdooly.github.io/TIL/AI/MCP_Selection_Guide/)는 TIL의 `docs/AI/MCP_Selection_Guide.md`에서 관리합니다. Windows·Linux·Kubernetes와 백엔드·데이터·운영·Android 작업별 도구를 고르고 설치·연결 명령과 사용 예시를 볼 수 있습니다. 별 수는 문서에 적힌 관측 시점의 값입니다.
+
+가이드 예제는 공식 저장소·문서와 대조한 연결 안내입니다. 이 링크 추가가 각 MCP 설치나 기존 VM·DB 연결 검증을 뜻하지는 않습니다. 주소를 바꾸면 TIL의 실제 공개 결과와 이 상단 링크를 함께 확인합니다.
