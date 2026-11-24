@@ -59,6 +59,7 @@ Color Rest와 노비의 삶은 공개 개인 앱 후보로 확인했으나 READM
 상단의 [MCP 가이드](https://devdooly.github.io/TIL/AI/MCP_Selection_Guide/)는 TIL의 `docs/AI/MCP_Selection_Guide.md`에서 관리합니다. Windows·Linux·Kubernetes와 백엔드·데이터·운영·Android 작업별 도구를 고르고 설치·연결 명령과 사용 예시를 볼 수 있습니다. 별 수는 문서에 적힌 관측 시점의 값입니다.
 
 가이드 예제는 공식 저장소·문서와 대조한 연결 안내입니다. 이 링크 추가가 각 MCP 설치나 기존 VM·DB 연결 검증을 뜻하지는 않습니다. 주소를 바꾸면 TIL의 실제 공개 결과와 이 상단 링크를 함께 확인합니다.
+
 ## 개인 Cloudflare 계정으로 이전 · 2026-11-24
 
 현재 [공개 데모](https://moim-pocket.devdooly.workers.dev)는 사용자 소유 Cloudflare 계정의 Workers·D1·R2에서 실행합니다. 위 2026-11-23 기록의 Sites 주소는 최초 게시 이력입니다. 이전 주소와 기존 데이터는 삭제하지 않았습니다.
