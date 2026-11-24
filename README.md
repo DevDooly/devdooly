@@ -87,7 +87,7 @@ AI 에이전트용 작업 지침과 오버레이·성능·테스트·릴리스 �
 
 가상 모임 데이터로 입장·총무 전환과 주요 기능을 체험할 수 있습니다. 공개 데모의 변경 내용은 방문자끼리 공유됩니다.
 
-[공개 데모 체험](https://moim-pocket.wlgnsgks.chatgpt.site) · [프로젝트·실행 안내](https://github.com/DevDooly/moim-pocket) · [구현 소스](https://github.com/DevDooly/moim-pocket/tree/main/src) · [데이터 구조](https://github.com/DevDooly/moim-pocket/blob/main/prisma/schema.prisma)
+[공개 데모 체험](https://moim-pocket.devdooly.workers.dev) · [프로젝트·실행 안내](https://github.com/DevDooly/moim-pocket) · [구현 소스](https://github.com/DevDooly/moim-pocket/tree/main/src) · [데이터 구조](https://github.com/DevDooly/moim-pocket/blob/main/prisma/schema.prisma)
 
 ### Platform Lab · 서비스부터 플랫폼 구축까지
 

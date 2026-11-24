@@ -15,7 +15,7 @@
 | 프로젝트 | 기능·상태 근거 | AI 활용 설명의 근거 |
 | --- | --- | --- |
 | Slivue | [README](https://github.com/DevDooly/Slivue/blob/main/README.md), [개발 문서](https://github.com/DevDooly/Slivue/blob/main/docs/DEVELOPMENT_REFERENCE.md) — Android 알림·답장, GitHub APK, Play 출시 준비 | [AI 작업 지침과 스킬](https://github.com/DevDooly/Slivue/blob/main/AGENTS.md) |
-| 모임포켓 | [README](https://github.com/DevDooly/moim-pocket/blob/main/README.md) — 회비·장부·일정·투표·사진, Docker Compose 실행과 [Cloudflare 공개 데모](https://moim-pocket.wlgnsgks.chatgpt.site) | 사용자가 AI와 진행한 계모임 페이지로 지정. 도구별 작업량·기여 비율은 공개 기록에 없음 |
+| 모임포켓 | [README](https://github.com/DevDooly/moim-pocket/blob/main/README.md) — 회비·장부·일정·투표·사진, Docker Compose 실행과 [Cloudflare 공개 데모](https://moim-pocket.devdooly.workers.dev) | 사용자가 AI와 진행한 계모임 페이지로 지정. 도구별 작업량·기여 비율은 공개 기록에 없음 |
 | Platform Lab | [공개 문서](https://devdooly.github.io/devdooly-platform-lab/handbook/), [소스](https://github.com/DevDooly/devdooly-platform-lab)와 [VM CI/CD](https://github.com/DevDooly/devdooly-platform-lab-vm-cicd) | 이 대화의 구현·검증·문서화 기록, [Java 예제의 AI 활용 범위](https://github.com/DevDooly/devdooly-platform-lab/blob/main/examples/java-window-analysis/PROVENANCE.md) |
 | Thumbbridge | [README](https://github.com/DevDooly/Thumbbridge/blob/main/README.md), [구현·검증](https://github.com/DevDooly/Thumbbridge/blob/main/docs/DEVELOPMENT.md) — Kotlin·Android View, 개발용 debug APK | 이전 공개 프로필의 Android 개발 프로젝트를 계승. 문서에 없는 모델명·기여 비율은 추가하지 않음 |
 | llm-dev-cli | [README](https://github.com/DevDooly/llm-dev-cli/blob/main/README.md) — 초기 문서·룰셋·정적 점검·로컬 대시보드 | AI 프로젝트를 위한 개발 도구라는 공개 설명 |
@@ -59,3 +59,12 @@ Color Rest와 노비의 삶은 공개 개인 앱 후보로 확인했으나 READM
 상단의 [MCP 가이드](https://devdooly.github.io/TIL/AI/MCP_Selection_Guide/)는 TIL의 `docs/AI/MCP_Selection_Guide.md`에서 관리합니다. Windows·Linux·Kubernetes와 백엔드·데이터·운영·Android 작업별 도구를 고르고 설치·연결 명령과 사용 예시를 볼 수 있습니다. 별 수는 문서에 적힌 관측 시점의 값입니다.
 
 가이드 예제는 공식 저장소·문서와 대조한 연결 안내입니다. 이 링크 추가가 각 MCP 설치나 기존 VM·DB 연결 검증을 뜻하지는 않습니다. 주소를 바꾸면 TIL의 실제 공개 결과와 이 상단 링크를 함께 확인합니다.
+## 개인 Cloudflare 계정으로 이전 · 2026-11-24
+
+현재 [공개 데모](https://moim-pocket.devdooly.workers.dev)는 사용자 소유 Cloudflare 계정의 Workers·D1·R2에서 실행합니다. 위 2026-11-23 기록의 Sites 주소는 최초 게시 이력입니다. 이전 주소와 기존 데이터는 삭제하지 않았습니다.
+
+원본 공개 데모의 JSON 백업을 새 D1에 복원한 뒤 13개 테이블의 모든 행과 필드가 일치하는지 확인했습니다. 모임원 4명·거래 3건·게시글 2건·앨범 1개가 보존됐고, 이전할 사진 원본은 0개였습니다. 새 R2에는 임시 PNG를 업로드해 원본 bytes·앨범 등록·ZIP을 확인한 뒤 해당 앨범과 객체를 정리했습니다.
+
+공개 HTTPS, 입장·총무 인증, 주요 API 7개를 확인했습니다. 최초 빌드는 클라이언트 링크 이동이 멈추는 문제가 있어 일반 링크로 수정했습니다. 최종 배포에서는 PC 1280px·모바일 390px에서 장부·일정·투표·갤러리·게시판·설정으로 실제 이동하고 로그인·총무 상태가 유지되는 것을 확인했습니다. 확인 범위는 가상 데이터의 공개 데모이며 장기 부하·요금·복구 훈련 검증은 포함하지 않습니다.
+
+소스·실패 기록·단계별 명령은 로컬 개인 배포 폴더의 `docs/PERSONAL_CLOUDFLARE_EXECUTION.md`와 `MOIM-CLOUDFLARE-20261124.md`에 보관합니다. 세션 secret·원본 백업·개인 청구 정보는 공개 저장소에 넣지 않습니다. 첫 주소 생성 뒤 일시적인 TLS 준비 지연도 기록했으며, 실제 HTTPS 성공을 확인한 뒤 이 링크를 바꿨습니다.
